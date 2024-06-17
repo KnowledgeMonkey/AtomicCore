@@ -1,0 +1,43 @@
+name: AtomicCore
+version: '${project.version}'
+main: me.nox.atomiccore.AtomicCore
+api-version: '1.20'
+load: STARTUP
+commands:
+  gamemode:
+    description: Change your or another player's gamemode
+    usage: /<command> [<text>] [<player>]
+    aliases: [gm]
+
+  discord:
+    description: Get the discord server link
+    usage: /<command>
+
+  enchantwithpig:
+    description: Entchant your held item with Pig Shooter I
+    usage: /<command>
+  god:
+    description: Become invincible
+    usage: /<command>
+    permission: Atomic.God
+  bangui:
+    description: Opens the bangui
+    usage: /bangui
+    permission: Atomic.bangui
+
+permissions:
+  Atomic.God:
+    description: Allows enabling Godmode
+    default: op
+  Atomic.bangui:
+    description: Allows opening the bangui
+    default: op
+  Atomic.gamemode:
+    description: Permission to change gamemode
+    default: op
+  Atomic.gamemode.other:
+    description: Permission to change other player's gamemode
+    default: op
+  Atomic.enchantwithpig:
+    description: Permission to enchant items with Pig Shooter I
+    default: op
